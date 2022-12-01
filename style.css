@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Spectral SC';
+    src: local('Spectral SC Regular'), local('SpectralSC-Regular'), url('./fonts/SpectralSC/Spectralscregular.woff2') format('woff2'), url('./fonts/SpectralSC/Spectralscregular.woff') format('woff'), url('./fonts/SpectralSC/Spectralscregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat/Montserrat-Regular.woff2') format('woff2') url('./fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spectral SC';
+}
+.questions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.questions__content{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions__title{
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #424242;
+    margin: 0 0 65px 0;
+}
+.questions__form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.questions__form *{
+    width: 28%;
+    height: 50px;
+    border-radius: 49px;
+}
+.questions__form input{
+    padding-left: 4%;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    border: 1px solid #BDBDBD
+
+}
+.questions__form input:focus-visible{
+    outline: transparent;
+}
+.questions__form button{
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+.questions__form::after{
+    content: "*нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности";
+    width: 28%;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #525252;
+    margin: 10px 0 0 72%;
+    text-align: center;
+}
+
